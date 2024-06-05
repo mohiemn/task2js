@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10</title>
+</head>
+
+<body>
+    <h1>Q10</h1>
+    <button onclick="Membershipe()">Membershipe Type</button>
+    <script>
+        function Membershipe(){
+            var type = prompt("Enter the type(Basic , Silver , Gold)").toLowerCase();
+            if(type === 'basic'){
+                alert("Access to basic content");
+            }else if(type === 'silver'){
+                alert("Access to silver content"); 
+            }else if(type === 'gold'){
+                alert("Access to all content");
+            }
+        }
+    </script>
+</body>
+
+</html>

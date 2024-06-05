@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+
+<body>
+    <h1>Q8</h1>
+    <button onclick="Garde()">Grade</button>
+    <script>
+        function Garde(){
+            var Garde = parseFloat(prompt("Enter the Garde"));
+            if(isNaN(Garde)){
+                alert("NAN");
+            }else if(Garde < 60){
+                alert("F");
+            }else if(Garde > 60 && Garde<=69){
+                alert("D");
+            }else if(Garde > 70 && Garde<=79){
+                alert("C");
+            }else if(Garde > 80 && Garde<=89){
+                alert("B");
+            }else if(Garde > 90 && Garde<=100){
+                alert("F");
+            }else if(Garde < 0 && Garde>100){
+                alert("Invalid RANGE");
+            }
+        }
+    </script>
+</body>
+
+</html>

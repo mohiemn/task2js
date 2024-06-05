@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+</head>
+<body>
+    <h1>Q1</h1>
+    <input type="number" id="num" placeholder="Enter num value">
+    <button onclick="display()">Click</button>
+    <p id="answer"></p>
+
+    <script>
+        function display() {
+            let num = parseFloat(document.getElementById("num").value);
+            let result;
+            if (isNaN(num)) {
+                alert("Please enter valid numbers");
+            } 
+            else if(num%2==0){
+                window.alert("Even");
+            }else if(num % 2 != 0){
+                window.alert("Odd");
+            }
+            
+        }
+    </script>
+</body>
+</html>

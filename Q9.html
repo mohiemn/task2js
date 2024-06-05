@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+</head>
+
+<body>
+    <h1>Q9</h1>
+    <button onclick="Age()">Age</button>
+    <script>
+        function Age(){
+            var Age = parseFloat(prompt("Enter the Age"));
+            if(isNaN(Age)){
+                alert("NAN");
+            }else if(Age < 13){
+                alert("Child");
+            }else if(Age >= 13 && Age<=19){
+                alert("Teenager");
+            }else if(Age >= 20){
+                alert("Adult");
+            }
+        }
+    </script>
+</body>
+
+</html>

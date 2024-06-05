@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+</head>
+
+<body>
+    <h1>Q3</h1>
+    <button onclick="temperature()">temperature</button>
+    <script>
+        function temperature() {
+            var temperature = parseFloat(prompt("Enter the current temperature:"));
+            if (isNaN(temperature) ) {
+                alert("Please enter valid temperature");
+            }
+            else if (temperature < 20) {
+                document.write("Cold.");
+            } else if (temperature >= 20 && temperature <= 30) {
+                document.write("Warm.");
+            } else {
+                document.write("Hot.");
+            }
+        }
+    </script>
+</body>
+
+</html>

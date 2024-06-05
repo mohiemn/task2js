@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+
+<body>
+    <h1>Q4</h1>
+    <button onclick="passing()">temperature</button>
+    <script>
+        function passing() {
+            var grade = parseFloat(prompt("Enter the grade:"));
+            if (isNaN(grade)) {
+                alert("Please enter valid numbers");
+            }
+            else if (grade < 20) {
+                document.write("Cold.");
+            } else if (grade >= 20 && temperature <= 30) {
+                document.write("Warm.");
+            } else {
+                document.write("Hot.");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+</head>
+<body>
+    <h1>Q2</h1>
+    <input type="number" id="age" placeholder="Enter age value">
+    <button onclick="display()">Click</button>
+    <p id="answer"></p>
+
+    <script>
+        function display() {
+            let age = parseFloat(document.getElementById("age").value);
+            let result;
+            if (isNaN(age) ) {
+                result = "Please enter valid Age";
+            } 
+            else if(age >= 18 ){
+                result ="they can watch the movie.";
+            }else if(age < 18){
+                result ="they cannot watch the movie.";
+            }
+            document.getElementById("answer").innerHTML = `<b>${result}</b>`; 
+        }
+    </script>
+</body>
+</html>
